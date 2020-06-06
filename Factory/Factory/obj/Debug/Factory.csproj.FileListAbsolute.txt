@@ -1,0 +1,6 @@
+c:\users\student\documents\visual studio 2015\Projects\Factory\Factory\bin\Debug\Factory.exe.config
+c:\users\student\documents\visual studio 2015\Projects\Factory\Factory\bin\Debug\Factory.exe
+c:\users\student\documents\visual studio 2015\Projects\Factory\Factory\bin\Debug\Factory.pdb
+c:\users\student\documents\visual studio 2015\Projects\Factory\Factory\obj\Debug\Factory.csprojResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2015\Projects\Factory\Factory\obj\Debug\Factory.exe
+c:\users\student\documents\visual studio 2015\Projects\Factory\Factory\obj\Debug\Factory.pdb
