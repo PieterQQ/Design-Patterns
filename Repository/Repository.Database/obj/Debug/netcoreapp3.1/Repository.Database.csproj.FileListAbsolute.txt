@@ -1,0 +1,9 @@
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\bin\Debug\netcoreapp3.1\Repository.Database.deps.json
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\bin\Debug\netcoreapp3.1\Repository.Database.dll
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\obj\Debug\netcoreapp3.1\Repository.Database.csprojAssemblyReference.cache
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\obj\Debug\netcoreapp3.1\Repository.Database.AssemblyInfoInputs.cache
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\obj\Debug\netcoreapp3.1\Repository.Database.AssemblyInfo.cs
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\bin\Debug\netcoreapp3.1\Repository.Database.pdb
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\obj\Debug\netcoreapp3.1\Repository.Database.csproj.CoreCompileInputs.cache
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\obj\Debug\netcoreapp3.1\Repository.Database.dll
+C:\Users\Pieter\Documents\GitHub\Design-Patterns\Repository\Repository.Database\obj\Debug\netcoreapp3.1\Repository.Database.pdb
