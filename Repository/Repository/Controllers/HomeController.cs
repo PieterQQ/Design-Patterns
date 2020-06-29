@@ -15,22 +15,23 @@ namespace Repository.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IServiceProvider _serviceProvider;
-        public HomeController(ILogger<HomeController> logger, IServiceProvider serviceProvider)
+        private readonly ISettingRepositories _settingRepositories;
+        public HomeController(ILogger<HomeController> logger, IServiceProvider serviceProvider, ISettingRepositories settingRepositories)
         {
             _logger = logger;
             _serviceProvider = serviceProvider;
+            _settingRepositories = settingRepositories;
         }
 
         public IActionResult Index()
         {
-            var database=_serviceProvider.GetService(typeof(RepositoryDbContext)) as RepositoryDbContext;
-            var repository = new SettingRepositories(database);
-            repository.UpdateSetting(new Settings
+     
+            _settingRepositories.UpdateSetting(new Settings
             {
                 Name = "Nazwa",
-                Value = "Wartosc"
+                Value = "Value"
             });
-            var Result = repository.GetAll();
+            var Result = _settingRepositories.GetAll();
             return Ok(Result);
         }
 

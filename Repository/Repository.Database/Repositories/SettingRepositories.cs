@@ -1,32 +1,23 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Repository.Database.Entities;
+using Repository.Database.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 
 namespace Repository.Database
 {
-    public class SettingRepositories
+    public class SettingRepositories : BaseRepository<Settings>, ISettingRepositories
     {
-        private  RepositoryDbContext _dbcontext;
-        private DbSet<Settings> DbSet => _dbcontext.settings;
-        public SettingRepositories(RepositoryDbContext dbContext)
+        protected override DbSet<Settings> DbSet => _dbcontext.settings;
+
+        public SettingRepositories(RepositoryDbContext dbContext) : base(dbContext)
         {
-            _dbcontext = dbContext;
         }
-        public List<Settings> GetAll()
-        {
-            var list = new List<Settings>();
-            var settings = DbSet;
-            foreach (var setting in settings)
-            {
-                list.Add(setting);
-            }
-            return list;
-        }
+      
         public void UpdateSetting(Settings setting)
         {
-            var toUpdate = DbSet.Where(x => x.Id == setting.Id).FirstOrDefault();
+            var toUpdate = DbSet.Where(x => x.Name == setting.Name).FirstOrDefault();
             if (toUpdate == null)
             {
                 DbSet.Add(setting);
@@ -39,9 +30,6 @@ namespace Repository.Database
 
             SaveChanges();
         }
-        public void SaveChanges()
-        {
-            _dbcontext.SaveChanges();
-        }
+      
     }
 }

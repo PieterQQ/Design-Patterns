@@ -23,6 +23,7 @@ namespace Repository
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<RepositoryDbContext>(options => options.UseSqlServer("Server=.;Database=RepositoryDatabase;Trusted_Connection=True;"));
+            services.AddScoped<ISettingRepositories,SettingRepositories>();
             services.AddControllersWithViews();
         
         }
