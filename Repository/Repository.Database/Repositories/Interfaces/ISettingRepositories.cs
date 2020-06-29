@@ -8,6 +8,6 @@ namespace Repository.Database
         List<Settings> GetAll();
         void UpdateSetting(Settings setting);
         void SaveChanges();
-        void RemoveSetting(int id);
+        void RemoveSetting(string name);
     }
 }

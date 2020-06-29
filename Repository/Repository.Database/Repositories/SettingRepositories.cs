@@ -31,9 +31,9 @@ namespace Repository.Database
             SaveChanges();
         }
 
-        public void RemoveSetting(int id)
+        public void RemoveSetting(string name)
         {
-            var toRemove = DbSet.Where(x => x.Id == id).First();
+            var toRemove = DbSet.Where(x => x.Name == name).First();
             if (toRemove!=null)
             {
                 DbSet.Remove(toRemove);

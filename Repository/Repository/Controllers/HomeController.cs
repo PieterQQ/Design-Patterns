@@ -31,7 +31,7 @@ namespace Repository.Controllers
                 Name = "Nazwa",
                 Value = "Value"
             });
-            _settingRepositories.RemoveSetting(1);
+            _settingRepositories.RemoveSetting("Nazwa");
             var Result = _settingRepositories.GetAll();
             return Ok(Result);
         }
