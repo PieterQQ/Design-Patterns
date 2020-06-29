@@ -42,7 +42,7 @@ namespace Repository.Database
 
             SaveChanges();
         }
-            public Settings FindByName(string name)
+            public Settings GetSettingByName(string name)
             {
                 var toFind = DbSet.Where(x => x.Name == name).First();
             return toFind;

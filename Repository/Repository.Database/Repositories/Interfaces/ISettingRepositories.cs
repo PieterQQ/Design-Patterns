@@ -9,5 +9,6 @@ namespace Repository.Database
         void UpdateSetting(Settings setting);
         void SaveChanges();
         void RemoveSetting(string name);
-        public Settings FindByName(string name);
+        public Settings GetSettingByName(string name);
     }
+}
