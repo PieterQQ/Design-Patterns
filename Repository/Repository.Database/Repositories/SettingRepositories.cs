@@ -34,13 +34,18 @@ namespace Repository.Database
         public void RemoveSetting(string name)
         {
             var toRemove = DbSet.Where(x => x.Name == name).First();
-            if (toRemove!=null)
+            if (toRemove != null)
             {
                 DbSet.Remove(toRemove);
             }
-          
+
 
             SaveChanges();
         }
-    }
+            public Settings FindByName(string name)
+            {
+                var toFind = DbSet.Where(x => x.Name == name).First();
+            return toFind;
+            }
+        }
 }
