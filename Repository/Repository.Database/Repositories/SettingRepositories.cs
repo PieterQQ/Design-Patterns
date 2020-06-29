@@ -30,6 +30,17 @@ namespace Repository.Database
 
             SaveChanges();
         }
-      
+
+        public void RemoveSetting(int id)
+        {
+            var toRemove = DbSet.Where(x => x.Id == id).First();
+            if (toRemove!=null)
+            {
+                DbSet.Remove(toRemove);
+            }
+          
+
+            SaveChanges();
+        }
     }
 }
